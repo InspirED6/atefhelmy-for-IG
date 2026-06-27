@@ -85,7 +85,7 @@ function StudentProfile({ studentId }: { studentId: string }) {
   const navigate = useNavigate();
 
   const levelMap: { [key: string]: string } = {
-    Level0: "3rd Prep",
+    Level0: "Cambridge OL",
     Level1: "1st Secondary",
     Level2: "2nd Secondary",
     Level3: "3rd Secondary",
@@ -269,7 +269,7 @@ function StudentProfile({ studentId }: { studentId: string }) {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="Level0">3rd Prep</SelectItem>
+                      <SelectItem value="Level0">Cambridge OL</SelectItem>
                       <SelectItem value="Level1">1st Secondary</SelectItem>
                       <SelectItem value="Level2">2nd Secondary</SelectItem>
                       <SelectItem value="Level3">3rd Secondary</SelectItem>

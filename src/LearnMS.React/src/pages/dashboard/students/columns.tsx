@@ -57,7 +57,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useParams, useSearchParams } from "react-router-dom";
 const levelMap = {
-  Level0: "3rd Prep School",
+  Level0: "Cambridge OL School",
   Level1: "1st Secondary ",
   Level2: "2nd Secondary ",
   Level3: "3rd Secondary ",

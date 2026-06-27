@@ -12,7 +12,7 @@ import { MoreHorizontal } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const levelMap: Record<string, string> = {
-  Level0: "3rd Prep",
+  Level0: "Cambridge OL",
   Level1: "1st Secondary",
   Level2: "2nd Secondary",
   Level3: "3rd Secondary",

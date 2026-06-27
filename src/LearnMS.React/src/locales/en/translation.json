@@ -11,7 +11,7 @@
     "description": "Explore the academic journey from middle school to graduation.",
     "items": {
       "thirdMiddle": {
-        "title": "3rd Prep. Grade ",
+        "title": "Cambridge OL. Grade ",
         "description": "Final year before entering secondary education."
       },
       "firstSecondary": {
@@ -43,7 +43,7 @@
     "selectCourse": "Select a course",
     "levels": {
       "all": "All",
-      "level0": "3rd Prep",
+      "level0": "Cambridge OL",
       "level1": "1st Secondary",
       "level2": "2nd Secondary",
       "level3": "3rd Secondary"
@@ -272,7 +272,7 @@
     "level": "Level",
     "levelDescription": "Your current grade or education level.",
     "selectLevel": "Select your education level",
-    "level3rdPrep": "3rd Preparatory",
+    "level3rdPrep": "Cambridge OLaratory",
     "level1stSecondary": "1st Secondary",
     "level2ndSecondary": "2nd Secondary",
     "level3rdSecondary": "3rd Secondary",
@@ -361,7 +361,7 @@
         "label": "School Level",
         "placeholder": "Select your level",
         "options": {
-          "level0": "3rd Prep School",
+          "level0": "Cambridge OL School",
           "level1": "1st Secondary",
           "level2": "2nd Secondary",
           "level3": "3rd Secondary"
