@@ -1,8 +1,8 @@
 {
   "hero": {
     "title": "Dr.Atef Helmy",
-    "subtitle": "Ge N I U S Academy",
-    "description": "Welcome to Ge N I U S Academy, where we transform learning into an exciting journey of discovery and growth Join us to explore the fascinating world of Integrated Science and Chemistry",
+    "subtitle": "Ge N I U S Academy For IGCSE",
+    "description": "Welcome to GeNiUS Academy! Hello everyone! I'm thrilled to be your teacher for IGCSE Chemistry.In this course, we'll explore science in a simple, interactive, and enjoyable way. Whether you're aiming for top grades or strengthening your understanding, I'll guide you step by step through every topic with clear explanations, practical examples, and effective exam strategies. Let's discover the world of science together and make learning an exciting experience!",
     "getStarted": "Get Started",
     "browseCourses": "Browse Courses"
   },
@@ -11,20 +11,20 @@
     "description": "Explore the academic journey from middle school to graduation.",
     "items": {
       "thirdMiddle": {
-        "title": "Cambridge OL. Grade ",
-        "description": "Final year before entering secondary education."
+        "title": "Cambridge OL.  ",
+        "description": "Comprehensive Cambridge O Level courses designed for academic success."
       },
       "firstSecondary": {
-        "title": "Cambridge AS Grade",
-        "description": "The beginning of high school studies."
+        "title": "Cambridge AS ",
+        "description": "Your pathway to outstanding Cambridge AS Level results."
       },
       "secondSecondary": {
-        "title": "Edexal OL Grade",
-        "description": "Further specialization and preparation for final year."
+        "title": "Edexal OL ",
+        "description": "Expert guidance for success in Edexcel O Level examinations."
       },
       "thirdSecondary": {
-        "title": "Edexal AS Grade",
-        "description": "The last year before graduation and college entry."
+        "title": "Edexal AS ",
+        "description": "Learn, analyze, and achieve in Edexcel AS Level."
       }
     }
   },
@@ -136,8 +136,8 @@
     "signIn": "Sign In"
   },
   "footer": {
-    "brand": "Ge N I U S Academy",
-    "copyright": "© {{year}} Ge N I U S Academy, All rights reserved",
+    "brand": "Ge N I U S Academy For IGCSE",
+    "copyright": "© {{year}} Ge N I U S Academy For IGCSE, All rights reserved",
     "social": {
       "facebook": "Facebook",
       "youtube": "YouTube",
