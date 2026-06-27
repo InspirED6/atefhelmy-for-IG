@@ -85,9 +85,9 @@ const StudentsPage = () => {
           <SelectContent>
             <SelectItem value={"all"}>All</SelectItem>
             <SelectItem value={StudentLevel.Level0}>Cambridge OL</SelectItem>
-            <SelectItem value={StudentLevel.Level1}>1st Secondary</SelectItem>
-            <SelectItem value={StudentLevel.Level2}>2nd Secondary</SelectItem>
-            <SelectItem value={StudentLevel.Level3}>3rd Secondary</SelectItem>
+            <SelectItem value={StudentLevel.Level1}>Cambridge AS</SelectItem>
+            <SelectItem value={StudentLevel.Level2}>Edexal OL</SelectItem>
+            <SelectItem value={StudentLevel.Level3}>Edexal AS</SelectItem>
           </SelectContent>
         </Select>
       </div>

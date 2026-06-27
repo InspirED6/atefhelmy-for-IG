@@ -275,9 +275,9 @@ function CourseDetailsForm({
                   </FormControl>
                   <SelectContent>
                     <SelectItem value='Level0'>Cambridge OL </SelectItem>
-                    <SelectItem value='Level1'>1st Secondary </SelectItem>
-                    <SelectItem value='Level2'>2nd Secondary </SelectItem>
-                    <SelectItem value='Level3'>3rd Secondary </SelectItem>
+                    <SelectItem value='Level1'>Cambridge AS </SelectItem>
+                    <SelectItem value='Level2'>Edexal OL </SelectItem>
+                    <SelectItem value='Level3'>Edexal AS </SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />

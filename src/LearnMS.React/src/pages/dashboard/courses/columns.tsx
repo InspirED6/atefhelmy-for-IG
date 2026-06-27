@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 
 const levelMap: Record<string, string> = {
   Level0: "Cambridge OL",
-  Level1: "1st Secondary",
-  Level2: "2nd Secondary",
-  Level3: "3rd Secondary",
+  Level1: "Cambridge AS",
+  Level2: "Edexal OL",
+  Level3: "Edexal AS",
 };
 
 export const coursesColumns: ColumnDef<Course>[] = [

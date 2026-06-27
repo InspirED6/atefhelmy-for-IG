@@ -15,15 +15,15 @@
         "description": "Final year before entering secondary education."
       },
       "firstSecondary": {
-        "title": "1st Secondary Grade",
+        "title": "Cambridge AS Grade",
         "description": "The beginning of high school studies."
       },
       "secondSecondary": {
-        "title": "2nd Secondary Grade",
+        "title": "Edexal OL Grade",
         "description": "Further specialization and preparation for final year."
       },
       "thirdSecondary": {
-        "title": "3rd Secondary Grade",
+        "title": "Edexal AS Grade",
         "description": "The last year before graduation and college entry."
       }
     }
@@ -44,9 +44,9 @@
     "levels": {
       "all": "All",
       "level0": "Cambridge OL",
-      "level1": "1st Secondary",
-      "level2": "2nd Secondary",
-      "level3": "3rd Secondary"
+      "level1": "Cambridge AS",
+      "level2": "Edexal OL",
+      "level3": "Edexal AS"
     },
     "pagination": {
       "showing": "Showing page",
@@ -273,9 +273,9 @@
     "levelDescription": "Your current grade or education level.",
     "selectLevel": "Select your education level",
     "level3rdPrep": "Cambridge OL",
-    "level1stSecondary": "1st Secondary",
-    "level2ndSecondary": "2nd Secondary",
-    "level3rdSecondary": "3rd Secondary",
+    "level1stSecondary": "Cambridge AS",
+    "level2ndSecondary": "Edexal OL",
+    "level3rdSecondary": "Edexal AS",
     "studentId": "Student ID",
     "studentIdDescription": "Your unique student identification code.",
     "balance": "Balance",
@@ -362,9 +362,9 @@
         "placeholder": "Select your level",
         "options": {
           "level0": "Cambridge OL School",
-          "level1": "1st Secondary",
-          "level2": "2nd Secondary",
-          "level3": "3rd Secondary"
+          "level1": "Cambridge AS",
+          "level2": "Edexal OL",
+          "level3": "Edexal AS"
         }
       },
       "forgotPassword": "Forgot Password?",

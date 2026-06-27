@@ -58,9 +58,9 @@ import { useForm } from "react-hook-form";
 import { useParams, useSearchParams } from "react-router-dom";
 const levelMap = {
   Level0: "Cambridge OL School",
-  Level1: "1st Secondary ",
-  Level2: "2nd Secondary ",
-  Level3: "3rd Secondary ",
+  Level1: "Cambridge AS ",
+  Level2: "Edexal OL ",
+  Level3: "Edexal AS ",
 };
 
 export const studentsColumns: ColumnDef<SingleStudent>[] = [
