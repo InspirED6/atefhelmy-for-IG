@@ -53,6 +53,8 @@ const NavBar: React.FC<NavBarProps> = ({
       ? pathname === "/"
       : pathname === href || pathname.startsWith(`${href}/`);
 
+  const isHomePage = pathname === "/";
+
   useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (latest) => {
       setScrolled(latest > 0.05);
@@ -107,7 +109,14 @@ const NavBar: React.FC<NavBarProps> = ({
               <img
                 src="/logo.png"
                 alt="logo"
-                className="flex-shrink-0 w-8 h-8 rounded-lg sm:w-10 sm:h-10 dark:bg-white"
+                className={cn(
+                  "flex-shrink-0 rounded-lg dark:bg-white transition-all duration-300",
+                  isHomePage && !scrolled
+                    ? "w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                    : isHomePage
+                      ? "w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+                      : "w-8 h-8 sm:w-10 sm:h-10"
+                )}
               />
               <Heading className="text-lg font-bold truncate sm:text-xl md:text-2xl lg:text-3xl">
                 {brand.name}
