@@ -13,9 +13,9 @@ const StudentHomePage = () => {
         <HeroSection />
         <GradesSection />
       {/*  <ImportantLecturesSection />*/}
-        <SeniorsSection />
+       {/* <SeniorsSection />*/}
         {/* <LatestLecturesSection /> */}
-       <MemoriesSection/> 
+      {/* <MemoriesSection/> */}
         <AboutSection />
       </main>
       <Footer />
