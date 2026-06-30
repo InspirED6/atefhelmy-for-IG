@@ -18,7 +18,6 @@ import { useModalStore } from "@/store/use-modal-store";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { useTranslation } from "react-i18next";
-import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { FlowButton } from "./ui/flow-button";
 import { Heading } from "./ui/heading";
 import { useLocation } from "react-router-dom";
@@ -162,7 +161,6 @@ const NavBar: React.FC<NavBarProps> = ({
             </div>
 
             <div className="items-center hidden gap-3 lg:flex xl:gap-4">
-              <LanguageSwitcher />
               <ThemeToggle />
               {profile?.data &&
               profile.data.$type === "GetStudentProfileResult" ? (
@@ -282,7 +280,6 @@ const NavBar: React.FC<NavBarProps> = ({
                 <div className="pt-6 border-t border-neutral-200 dark:border-neutral-700">
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center justify-center gap-4">
-                      <LanguageSwitcher />
                       <ThemeToggle />
                     </div>
 

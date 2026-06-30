@@ -87,7 +87,6 @@ declare module "i18next" {
           language: string;
           languages: {
             english: string;
-            arabic: string;
           };
           currency: string;
           profile: string;

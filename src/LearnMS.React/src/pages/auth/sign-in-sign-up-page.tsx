@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import PlatformInstructionsModal from "@/components/modals/platform-instructions-modal";
-import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import Lottie from "lottie-react";
 import authAnimation from "@/assets/auth-anim.json";
 import { motion, AnimatePresence } from "framer-motion";
@@ -23,8 +22,7 @@ const SignInSignUpPage = () => {
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const { data: profile, isFetching: profileFetching } = useGetProfile();
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+  const { t } = useTranslation();
 
   const pageVariants = {
     initial: { opacity: 0 },
@@ -41,7 +39,7 @@ const SignInSignUpPage = () => {
   const sectionVariants = {
     initial: {
       opacity: 0,
-      x: isRTL ? "50%" : "-50%",
+      x: "-50%",
       filter: "blur(10px)",
     },
     animate: {
@@ -55,7 +53,7 @@ const SignInSignUpPage = () => {
     },
     exit: {
       opacity: 0,
-      x: isRTL ? "-50%" : "50%",
+      x: "50%",
       filter: "blur(10px)",
     },
   };
@@ -63,7 +61,7 @@ const SignInSignUpPage = () => {
   const rightSectionVariants = {
     initial: {
       opacity: 0,
-      x: isRTL ? "-50%" : "50%",
+      x: "50%",
       filter: "blur(10px)",
     },
     animate: {
@@ -77,7 +75,7 @@ const SignInSignUpPage = () => {
     },
     exit: {
       opacity: 0,
-      x: isRTL ? "50%" : "-50%",
+      x: "-50%",
       filter: "blur(10px)",
     },
   };
@@ -114,7 +112,7 @@ const SignInSignUpPage = () => {
   const childVariants = {
     initial: {
       opacity: 0,
-      x: isRTL ? -200 : 200,
+      x: 200,
       filter: "blur(15px)",
     },
     animate: {
@@ -128,7 +126,7 @@ const SignInSignUpPage = () => {
     },
     exit: {
       opacity: 0,
-      x: isRTL ? 200 : -200,
+      x: -200,
       filter: "blur(15px)",
       transition: {
         duration: 0.3,
@@ -140,7 +138,7 @@ const SignInSignUpPage = () => {
   const formSwitchVariants = {
     initial: {
       opacity: 0,
-      x: isRTL ? -150 : 150,
+      x: 150,
       filter: "blur(10px)",
     },
     animate: {
@@ -154,7 +152,7 @@ const SignInSignUpPage = () => {
     },
     exit: {
       opacity: 0,
-      x: isRTL ? 150 : -150,
+      x: -150,
       filter: "blur(10px)",
       transition: {
         duration: 0.3,
@@ -238,7 +236,7 @@ const SignInSignUpPage = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      dir={i18n.language === "ar" ? "rtl" : "ltr"}
+      dir="ltr"
       className="flex flex-col min-h-screen overflow-hidden md:flex-row bg-neutral-100"
     >
       <motion.div
@@ -254,31 +252,20 @@ const SignInSignUpPage = () => {
         <Button
           variant="link"
           className={cn(
-            "absolute z-50 text-white group hover:text-neutral-200 top-3 md:top-4 p-2 md:p-3 min-h-[44px] min-w-[44px] flex items-center justify-center md:justify-start text-sm md:text-base rounded-lg hover:bg-white/10 transition-colors touch-manipulation",
-            i18n.language === "ar" ? "right-3 md:right-4" : "left-3 md:left-4"
+            "absolute z-50 text-white group hover:text-neutral-200 top-3 md:top-4 p-2 md:p-3 min-h-[44px] min-w-[44px] flex items-center justify-center md:justify-start text-sm md:text-base rounded-lg hover:bg-white/10 transition-colors touch-manipulation left-3 md:left-4"
           )}
           onClick={() => navigate("/")}
           style={{ pointerEvents: "auto" }}
         >
           <ArrowLeft
             className={cn(
-              "transition-transform size-4 md:size-5 group-hover:-translate-x-1 pointer-events-none",
-              i18n.language === "ar"
-                ? "ml-0 md:ml-1.5 rotate-180"
-                : "mr-0 md:mr-1.5"
+              "transition-transform size-4 md:size-5 group-hover:-translate-x-1 pointer-events-none mr-0 md:mr-1.5"
             )}
           />
           <span className="hidden pointer-events-none md:inline">
             {t("auth.back")}
           </span>
         </Button>
-
-        <LanguageSwitcher
-          className={cn(
-            "absolute z-50 top-3 md:top-4 bg-white/10 border-white/20 text-white touch-manipulation",
-            i18n.language === "ar" ? "left-3 md:left-4" : "right-3 md:right-4"
-          )}
-        />
 
         <motion.div
           className="relative z-20 px-2 text-center md:px-0"
@@ -299,8 +286,7 @@ const SignInSignUpPage = () => {
           >
             <GraduationCap
               className={cn(
-                "w-8 h-8 md:w-10 md:h-10",
-                i18n.language === "ar" ? "ml-2 md:ml-3" : "mr-2 md:mr-3"
+                "w-8 h-8 md:w-10 md:h-10 mr-2 md:mr-3"
               )}
             />
             <h1 className="text-xl font-bold md:text-2xl">{t("auth.brand")}</h1>
