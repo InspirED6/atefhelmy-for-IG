@@ -103,7 +103,7 @@ const ImportantLecturesSection = () => {
             }}
             className={
               i === currentPage
-                ? "bg-emerald-500 text-white dark:bg-emerald-600 dark:text-white hover:bg-emerald-600 dark:hover:bg-emerald-700"
+                ? "bg-indigo-500 text-white dark:bg-indigo-600 dark:text-white hover:bg-indigo-600 dark:hover:bg-indigo-700"
                 : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
             }
           >
@@ -223,7 +223,7 @@ const ImportantLecturesSection = () => {
           }}
           className="relative max-w-2xl mx-auto mb-16 text-center"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[100%] bg-emerald-300 rounded-full blur-[80px] opacity-20 pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[100%] bg-indigo-300 rounded-full blur-[80px] opacity-20 pointer-events-none" />
 
           <motion.div variants={leftToRightVariants} className="mb-10">
             <Badge className="px-4 py-1 text-sm font-medium text-zinc-700 bg-zinc-100 border-zinc-200 hover:bg-zinc-200 dark:text-zinc-200 dark:bg-zinc-700 dark:border-zinc-600 dark:hover:bg-zinc-600">
@@ -367,7 +367,7 @@ const LatestLecturesSection = () => {
             }}
             className={
               i === currentPage
-                ? "bg-emerald-500 text-white dark:bg-emerald-600 dark:text-white hover:bg-emerald-600 dark:hover:bg-emerald-700"
+                ? "bg-indigo-500 text-white dark:bg-indigo-600 dark:text-white hover:bg-indigo-600 dark:hover:bg-indigo-700"
                 : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
             }
           >
@@ -397,8 +397,8 @@ const LatestLecturesSection = () => {
   };
 
   const latestLecturesGradientColors = {
-    from: "oklch(0.75 0.1 120)",
-    to: "oklch(0.55 0.15 90)",
+    from: "oklch(0.75 0.12 264)",
+    to: "oklch(0.55 0.18 280)",
   };
 
   if (shouldReduceMotion) {
@@ -410,7 +410,7 @@ const LatestLecturesSection = () => {
         />
         <div className="container relative z-10 px-4 mx-auto max-w-7xl">
           <div className="relative max-w-2xl mx-auto mb-16 text-center">
-            <Badge className="px-4 py-1 mb-10 text-sm font-medium text-zinc-700 bg-emerald-100 border-emerald-200 hover:bg-emerald-200 dark:text-zinc-200 dark:bg-emerald-700 dark:border-emerald-600 dark:hover:bg-emerald-600">
+            <Badge className="px-4 py-1 mb-10 text-sm font-medium text-zinc-700 bg-indigo-100 border-indigo-200 hover:bg-indigo-200 dark:text-zinc-200 dark:bg-indigo-700 dark:border-indigo-600 dark:hover:bg-indigo-600">
               {t("latestLectures.badge")}
             </Badge>
             <h2 className="mb-6 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-5xl">
@@ -543,9 +543,9 @@ const LatestLecturesSection = () => {
           }}
           className="relative max-w-2xl mx-auto mb-16 text-center"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[100%] bg-emerald-300 rounded-full blur-[80px] opacity-20 pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[100%] bg-indigo-300 rounded-full blur-[80px] opacity-20 pointer-events-none" />
           <motion.div variants={leftToRightVariants} className="mb-10">
-            <Badge className="px-4 py-1 text-sm font-medium text-zinc-700 bg-emerald-100 border-emerald-200 hover:bg-emerald-200 dark:text-zinc-200 dark:bg-emerald-700 dark:border-emerald-600 dark:hover:bg-emerald-600">
+            <Badge className="px-4 py-1 text-sm font-medium text-zinc-700 bg-indigo-100 border-indigo-200 hover:bg-indigo-200 dark:text-zinc-200 dark:bg-indigo-700 dark:border-indigo-600 dark:hover:bg-indigo-600">
               {t("latestLectures.badge")}
             </Badge>
           </motion.div>
@@ -714,14 +714,14 @@ function FeaturedLecture(props: { lecture: LectureItem }) {
           />
           <div className="absolute inset-0 transition-opacity duration-300 bg-gradient-to-t from-black/50 to-transparent opacity-20 group-hover:opacity-40" />
           <div className="absolute transition-opacity duration-300 opacity-0 top-3 right-3 group-hover:opacity-100">
-            <Badge className="px-2 py-1 text-xs font-medium text-white bg-emerald-600">
+            <Badge className="px-2 py-1 text-xs font-medium text-white bg-indigo-600">
               {t("importantLectures.featured")}
             </Badge>
           </div>
         </div>
 
         <CardHeader className="px-6 pt-5 pb-3">
-          <h3 className="text-xl font-semibold transition-colors duration-300 text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 line-clamp-2">
+          <h3 className="text-xl font-semibold transition-colors duration-300 text-zinc-900 dark:text-zinc-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 line-clamp-2">
             {props.lecture.title}
           </h3>
           <span className="inline-block px-3 py-1 mt-2 text-sm font-medium rounded-full text-zinc-600 bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-300">
@@ -743,7 +743,7 @@ function FeaturedLecture(props: { lecture: LectureItem }) {
               </div>
             </div>
             <div className="flex items-center gap-2 p-3 transition-colors duration-300 rounded-lg bg-zinc-50 dark:bg-zinc-800/50 group-hover:bg-zinc-100 dark:group-hover:bg-zinc-700/50">
-              <BookOpen className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
+              <BookOpen className="w-5 h-5 text-indigo-500 dark:text-indigo-400" />
               <div>
                 <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                   Lessons

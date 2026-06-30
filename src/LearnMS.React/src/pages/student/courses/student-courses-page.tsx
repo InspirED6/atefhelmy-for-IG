@@ -156,7 +156,7 @@ function CourseCard({ course }: { course: StudentCourseDto }) {
     switch (enrollment) {
       case "Active":
         return (
-          <Badge variant="default" className="text-white bg-emerald-500">
+          <Badge variant="default" className="text-white bg-indigo-500">
             {t("courses.status.active")}
           </Badge>
         );

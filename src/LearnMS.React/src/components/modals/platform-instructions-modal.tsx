@@ -76,7 +76,7 @@ const PlatformInstructionsContent: React.FC<{
                     isRTL ? "flex-row-reverse" : ""
                   }`}
                 >
-                  <span className="flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm font-bold text-white border rounded-full bg-emerald-500/80 backdrop-blur-sm border-white/20">
+                  <span className="flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm font-bold text-white border rounded-full bg-indigo-500/80 backdrop-blur-sm border-white/20">
                     {index + 1}
                   </span>
                   <p className={`${isRTL ? "text-right" : "text-left"} flex-1`}>
@@ -94,7 +94,7 @@ const PlatformInstructionsContent: React.FC<{
               id="accept-terms"
               checked={isAccepted}
               onCheckedChange={(checked) => setIsAccepted(checked as boolean)}
-              className="w-5 h-5 border-white/40 bg-white/10 backdrop-blur-sm data-[state=checked]:bg-emerald-500 data-[state=checked]:text-white data-[state=checked]:border-emerald-500"
+              className="w-5 h-5 border-white/40 bg-white/10 backdrop-blur-sm data-[state=checked]:bg-indigo-500 data-[state=checked]:text-white data-[state=checked]:border-indigo-500"
             />
             <Label
               className="text-base text-white cursor-pointer"
@@ -117,7 +117,7 @@ const PlatformInstructionsContent: React.FC<{
             <Button
               onClick={handleAccept}
               disabled={!isAccepted}
-              className="px-6 py-2 font-semibold text-white transition-colors border rounded-md bg-emerald-600/80 backdrop-blur-sm hover:bg-emerald-700/80 disabled:opacity-50 disabled:cursor-not-allowed border-emerald-500/50"
+              className="px-6 py-2 font-semibold text-white transition-colors border rounded-md bg-indigo-600/80 backdrop-blur-sm hover:bg-indigo-700/80 disabled:opacity-50 disabled:cursor-not-allowed border-indigo-500/50"
             >
               {t("platformInstructions.accept")}
             </Button>

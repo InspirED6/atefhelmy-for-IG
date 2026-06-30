@@ -758,7 +758,7 @@ function LectureAccordionContent({ lecture }: { lecture: StudentLectureDto }) {
         icon: FaPlay,
         variant: "default" as const,
         className:
-          "bg-green-600 hover:bg-green-700 text-white border-green-600 hover:border-green-700 shadow-lg hover:shadow-xl transition-all duration-200",
+          "bg-indigo-600 hover:bg-indigo-700 text-white border-indigo-600 hover:border-indigo-700 shadow-lg hover:shadow-xl transition-all duration-200",
         isInsufficientBalance: false,
       };
     } else if (hasInsufficientBalance) {
@@ -881,7 +881,7 @@ function LectureAccordionContent({ lecture }: { lecture: StudentLectureDto }) {
               className={`p-3 border rounded-lg sm:p-4 ${
                 isExpiringSoon
                   ? "bg-yellow-50/80 border-yellow-200/80 dark:bg-yellow-900/20 dark:border-yellow-800/50"
-                  : "bg-green-50/80 border-green-200/80 dark:bg-green-900/20 dark:border-green-800/50"
+                  : "bg-indigo-50/80 border-indigo-200/80 dark:bg-indigo-900/20 dark:border-indigo-800/50"
               }`}
             >
               <div className="flex items-center gap-3">
@@ -889,14 +889,14 @@ function LectureAccordionContent({ lecture }: { lecture: StudentLectureDto }) {
                   className={`flex items-center justify-center w-8 h-8 rounded-full ${
                     isExpiringSoon
                       ? "bg-yellow-100 dark:bg-yellow-800/30"
-                      : "bg-green-100 dark:bg-green-800/30"
+                      : "bg-indigo-100 dark:bg-indigo-800/30"
                   }`}
                 >
                   <FaClock
                     className={`w-4 h-4 ${
                       isExpiringSoon
                         ? "text-yellow-600 dark:text-yellow-400"
-                        : "text-green-600 dark:text-green-400"
+                        : "text-indigo-600 dark:text-indigo-400"
                     }`}
                   />
                 </div>
@@ -905,7 +905,7 @@ function LectureAccordionContent({ lecture }: { lecture: StudentLectureDto }) {
                     className={`text-sm font-medium ${
                       isExpiringSoon
                         ? "text-yellow-800 dark:text-yellow-200"
-                        : "text-green-800 dark:text-green-200"
+                        : "text-indigo-800 dark:text-indigo-200"
                     }`}
                   >
                     {t("courses.expiresOn")}
@@ -914,7 +914,7 @@ function LectureAccordionContent({ lecture }: { lecture: StudentLectureDto }) {
                     className={`text-sm ${
                       isExpiringSoon
                         ? "text-yellow-700 dark:text-yellow-300"
-                        : "text-green-700 dark:text-green-300"
+                        : "text-indigo-700 dark:text-indigo-300"
                     }`}
                   >
                     {expiresAt.toLocaleDateString()}
@@ -1242,7 +1242,7 @@ function LectureItemsAccordions({
           </span>
         </div>
         <div className="flex items-center gap-1.5">
-          <FaQuestionCircle className="w-3 h-3 text-green-500" />
+          <FaQuestionCircle className="w-3 h-3 text-indigo-500" />
           <span>
             {quizCount} {t("lectures.quizzes")}
           </span>

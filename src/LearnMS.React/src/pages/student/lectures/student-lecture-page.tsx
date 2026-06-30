@@ -213,7 +213,7 @@ function LectureHeader({
               <div className="flex flex-col gap-2">
                 {lecture.enrollment === "Active" && (
                   <div className="flex items-center w-full gap-2 px-3 py-2 rounded-lg sm:px-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm sm:w-fit">
-                    <FaClock className="flex-shrink-0 text-green-400" />
+                    <FaClock className="flex-shrink-0 text-indigo-400" />
                     <span className="text-xs font-medium sm:text-sm">
                       {t("lectures.lectureExpiresOn")}{" "}
                       {new Date(lecture.expiresAt!).toLocaleDateString()}
@@ -222,7 +222,7 @@ function LectureHeader({
                 )}
                 {course.enrollment === "Active" && (
                   <div className="flex items-center w-full gap-2 px-3 py-2 rounded-lg sm:px-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm sm:w-fit">
-                    <FaClock className="flex-shrink-0 text-green-400" />
+                    <FaClock className="flex-shrink-0 text-indigo-400" />
                     <span className="text-xs font-medium sm:text-sm">
                       {t("lectures.courseExpiresOn")}{" "}
                       {new Date(course.expiresAt!).toLocaleDateString()}

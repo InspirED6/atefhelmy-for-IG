@@ -100,7 +100,7 @@ function CourseLectures({ courseId: courseId }: { courseId: string }) {
       {lectures.map((lecture) => (
         <Card
           key={lecture.id}
-          className="p-4 overflow-hidden transition-all duration-500 group hover:shadow-lg hover:shadow-ebluemerald-100"
+          className="p-4 overflow-hidden transition-all duration-500 group hover:shadow-lg hover:shadow-indigo-100"
         >
           {/* Image Container with Gradient Overlay */}
           <div className="relative mb-4 overflow-hidden rounded-lg h-52">
@@ -135,7 +135,7 @@ function CourseLectures({ courseId: courseId }: { courseId: string }) {
           <CardFooter className="p-0">
             <Link
               to={`/dashboard/courses/${courseId}/lectures/${lecture.id}`}
-              className="flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold transition-all duration-300 bg-transparent border-2 rounded-full text-emerald-500 border-emerald-200 hover:bg-emerald-500 hover:text-white focus:ring-4 focus:ring-emerald-200"
+              className="flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold transition-all duration-300 bg-transparent border-2 rounded-full text-indigo-500 border-indigo-200 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:ring-indigo-200"
             >
               View Lecture
               <svg

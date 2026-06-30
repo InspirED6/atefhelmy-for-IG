@@ -62,25 +62,24 @@ const cardGridContainerVariants = {
   },
 };
 
-// Updated green color theme
 const cardData = [
   {
     icon: Atom,
-    bgClass: "bg-emerald-600",
+    bgClass: "bg-indigo-600",
     titleKey: "about.items.1.title",
     descKey: "about.items.1.description",
     textColor: "text-white",
   },
   {
     icon: School,
-    bgClass: "bg-green-700",
+    bgClass: "bg-indigo-700",
     titleKey: "about.items.2.title",
     descKey: "about.items.2.description",
     textColor: "text-white",
   },
   {
     icon: Laptop,
-    bgClass: "bg-emerald-900",
+    bgClass: "bg-indigo-900",
     titleKey: "about.items.3.title",
     descKey: "about.items.3.description",
     textColor: "text-white",
@@ -91,8 +90,8 @@ function AboutSection() {
   const { t } = useTranslation();
 
   const gradientColors = {
-    from: "oklch(0.65 0.2 150)", // soft green
-    to: "oklch(0.45 0.25 180)",  // darker green-blue
+    from: "oklch(0.65 0.22 264)",
+    to: "oklch(0.45 0.25 280)",
   };
 
   return (
