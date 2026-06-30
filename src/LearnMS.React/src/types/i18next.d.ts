@@ -66,6 +66,19 @@ declare module "i18next" {
             };
           };
         };
+        logo: {
+          badge: string;
+          title: string;
+          description: string;
+          tagline: string;
+          palette: string;
+          items: {
+            [key: string]: {
+              title: string;
+              description: string;
+            };
+          };
+        };
         about: {
           badge: string;
           title: string;

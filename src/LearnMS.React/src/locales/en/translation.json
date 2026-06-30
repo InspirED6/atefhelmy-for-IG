@@ -100,6 +100,27 @@
       }
     }
   },
+  "logo": {
+    "badge": "Our Identity",
+    "title": "The GeNiUS Logo",
+    "description": "Our logo represents the fusion of scientific curiosity and academic excellence — a beacon for every IGCSE student on their journey to success.",
+    "tagline": "Ge N I U S Academy For IGCSE",
+    "palette": "Brand Colors",
+    "items": {
+      "1": {
+        "title": "Genius Mindset",
+        "description": "The spark of brilliance — encouraging every student to think critically and solve problems creatively."
+      },
+      "2": {
+        "title": "Science & Chemistry",
+        "description": "Rooted in the world of molecules and reactions, reflecting our core expertise in IGCSE Chemistry."
+      },
+      "3": {
+        "title": "Academic Excellence",
+        "description": "A commitment to top grades, rigorous preparation, and guiding students toward their full potential."
+      }
+    }
+  },
   "about": {
     "badge": "Meet your Instructor",
     "title": "Who's Dr Atef?",

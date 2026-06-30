@@ -146,6 +146,7 @@ module.exports = {
         hero: "hsl(var(--hero))",
         gradesSection: "hsl(var(--gradesSection))",
         aboutSection: "hsl(var(--aboutSection))",
+        logoSection: "hsl(var(--logoSection))",
         seniorsSection: "hsl(var(--seniorsSection))",
         memoriesSection: "hsl(var(--memoriesSection))",
         footer: {

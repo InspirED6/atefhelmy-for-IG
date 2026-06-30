@@ -47,6 +47,7 @@
     --hero: 0 0% 100%;
     --gradesSection: 0 0% 100%;
     --aboutSection: 0 0% 96.1%;
+    --logoSection: 0 0% 100%;
     --seniorsSection: 0 0% 96.1%;
     --memoriesSection: 0 0% 100%;
     --footer: 0 0% 100%;
@@ -92,6 +93,7 @@
     --seniorsSection: 0 0% 0%;
     --memoriesSection: 0 0% 0%;
     --aboutSection: 0 0% 3.9%;
+    --logoSection: 0 0% 3.9%;
     --footer: 0 0% 0%;
     --footer-foreground: 0 0% 63.9%;
     --coursePage: 0 0% 9%;
